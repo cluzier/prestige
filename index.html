@@ -15,9 +15,8 @@ coded by cluzier & YourMoblieGeek
 -->
 
 <!DOCTYPE html>
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
-<!-- Website Template designed by www.downloadwebsitetemplates.co.uk -->
 <meta charset="UTF-8">
 <title>Prestige - San Francisco</title>
 <meta name="description" content="">
@@ -28,81 +27,19 @@ coded by cluzier & YourMoblieGeek
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72.png">
 <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
 <link rel="shortcut icon" href="images/ico/favicon.png">
-<!--[if IE]><![endif]-->
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery.js"></script>
 <script src="js/countdown.js"></script>
 <script src="js/owlcarousel.js"></script>
 <script src="js/uikit.scrollspy.js"></script>
 <script src="js/scripts.js"></script>
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="js/nav.js"></script>
 </head>
 
-
-<!--FIXED HEADER HTML-->
 <div class="navbar">
 	<img src="images/logo.png">
   </div>
 
-<!--START CSS FOR FIXED HEADER-->
-  <style>
-  /* Style the header */
-.navbar {
-	overflow: hidden;
-	padding: 10px 16px;
-    background-color: #ffffff;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-		width: 100%; /* Full width */
-		z-index: 1;
-}
- main {
-	 margin-top: 120px;
- }
-/* logo */
-img {
-height: 85px;
-width: 75px;
-}
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-  </style>
-
-
-<!--START JS FOR FIXED HEADER-->
-  <script>
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-	  </script>
 
 <body id="backtotop">
 <main>
