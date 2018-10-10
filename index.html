@@ -27,24 +27,29 @@
 
 
 <!--FIXED HEADER HTML-->
-<div class="header" id="myHeader">
+<div class="navbar">
 	<img src="images/logo.png">
   </div>
 
 <!--START CSS FOR FIXED HEADER-->
   <style>
   /* Style the header */
-.header {
-  padding: 10px 16px;
-  background: white;
-  color: #f1f1f1;
-  opacity: 1;
+.navbar {
+	overflow: hidden;
+	padding: 10px 16px;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+		width: 100%; /* Full width */
+		z-index: 1;
 }
-
+ main {
+	 margin-top: 120px;
+ }
 /* logo */
 img {
-height: 100px;
-width: 100px;
+height: 85px;
+width: 75px;
 }
 /* Page content */
 .content {
@@ -87,7 +92,7 @@ function myFunction() {
 	  </script>
 
 <body id="backtotop">
-
+<main>
 <div class="fullwidth clearfix">
 	<div id="topcontainer" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 		
@@ -96,7 +101,6 @@ function myFunction() {
 	</div>
 </div>
 
-<div class="arrow-separator arrow-white"></div>
 <div class="fullwidth colour3 clearfix">
 	<div id="quotecont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 		<p>
@@ -107,7 +111,6 @@ function myFunction() {
 	</div>
 </div>
 
-<div class="arrow-separator arrow-grey"></div>
 <div class="fullwidth colour1 clearfix">
 	<div id="countdown" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 
@@ -135,7 +138,6 @@ function myFunction() {
 	</div>
 </div>
 
-<div class="arrow-separator arrow-theme"></div>
 
 <div class="fullwidth colour2 clearfix">
 	<div id="maincont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
@@ -152,7 +154,6 @@ function myFunction() {
 	</div>
 </div>
 
-<div class="arrow-separator arrow-themelight"></div>
 
 <div class="fullwidth colour3 clearfix">
 	<div id="quotecont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
@@ -165,7 +166,6 @@ function myFunction() {
 	</div>
 </div>
 
-<div class="arrow-separator arrow-grey"></div>
 
 <div class="fullwidth colour2 clearfix">
 	<div id="maincont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
@@ -183,7 +183,6 @@ Welcome to Prestige San Francisco, social club and event center.</p>
 	</div>
 </div>
 
-<div class="arrow-separator arrow-themelight"></div>
 
 <div class="fullwidth clearfix">
 	<div id="footercont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
@@ -204,6 +203,6 @@ Welcome to Prestige San Francisco, social club and event center.</p>
 		</div>
 	</div>
 </div>
-   
+   </main>
 </body>
 </html>
