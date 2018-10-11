@@ -1,5 +1,7 @@
 # Prestige
+Dedicated to excellence
 
+# About
   Prestige SF is a self-organized network of people with a common agenda, cause, and interest in sharing ideas, 
 information and resources. The goal is to create a one of a kind member-driven experience for the creative and 
 business professional in the San Francisco Bay Area. The concept was to create a hub for the forward thinking 
