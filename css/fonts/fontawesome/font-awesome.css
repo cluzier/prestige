@@ -90,7 +90,7 @@
 }
 .fa-border {
   padding: .2em .25em .15em;
-  border: solid 0.08em #eeeeee;
+  border: solid 0.08em red;
   border-radius: .1em;
 }
 .pull-right {

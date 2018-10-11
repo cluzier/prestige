@@ -59,15 +59,16 @@ table
 }
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
+* html .clearfix { height: 10%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
 {
-	height:1%;
+	height:10%;
 }
 
 .clearfix
 {
 	display: block;
+	height: 10%;
 }
 
