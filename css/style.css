@@ -16,6 +16,7 @@
    Google Fonts
 ================================================== */
 
+@import url("/css/fonts/bebasneue/stylesheet.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic,900,900italic");
 
 /* ==================================================
@@ -41,7 +42,7 @@ html
 
 body
 {
-	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: 'bebas_neuebold', sans-serif;
 	font-size: 20px;
 	line-height: 32px;
 	font-weight: 300;
@@ -149,6 +150,12 @@ h1, h2, h3
 	text-transform: uppercase;
 }
 
+	h1 
+	{
+		font-size: 94px; 
+		margin: 30% 0 20px 0;
+	}
+
 	h2
 	{
 		font-size: 38px;
@@ -179,6 +186,12 @@ h1, h2, h3
 {
 	background: #EEE;
 }
+
+.colour4
+{
+	background-image: url("/img/sanfran-edit.jpg")
+}
+
 
 
 /* ==================================================
@@ -232,7 +245,7 @@ h1, h2, h3
 .fullwidth
 {
 	width: 100%;
-	height: 20%;
+	height: 600px;
 	padding: 60px 30px;
 	min-width: 280px;
 }
@@ -241,6 +254,16 @@ h1, h2, h3
 	{
 		margin: 0 auto;
 		width: 100%;
+		height: 800px; 
+		max-width: 1000px;
+		text-align: center;
+	}
+
+	.fullwidth .headcontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		height: 800px; 
 		max-width: 1000px;
 		text-align: center;
 	}
@@ -250,8 +273,8 @@ h1, h2, h3
 		padding: 6px 0 10px 0;
 		margin-bottom: 0;
 		letter-spacing: -1.5px;
-		color: #444;
-		font-weight: 400;
+		color: #fff;
+		font-weight: 800;
 	}
 	
 		#topcontainer h1 span
@@ -268,7 +291,10 @@ h1, h2, h3
 		color: #999;
 	}
 
-
+#learn {
+	width: 250px;
+    margin-top: 40px;
+}
 	
 #countdown
 {
