@@ -486,6 +486,21 @@ h1, h2, h3
 			align-items: center;
 		  }
 
+.uavc-icons {
+	display: block;
+	margin-bottom: 35px;
+	line-height: 1;
+}
+
+.right-half {
+	background-color: black;
+	position: absolute;
+	right: -355px;
+	bottom: -540px;
+	height: 600px;
+	width: 50%;
+	overflow: hidden;
+  }
 
 #footercont
 {
