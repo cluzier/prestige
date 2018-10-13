@@ -39,24 +39,24 @@
 		<meta property="og:description"  content=" Prestige SF is a self-organized network of people with a common agenda, cause, and interest in sharing ideas, information and resources. " />
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="http://prestige.club/img/sanfran-edit.jpg"  />
+		<meta property="og:image" content="http://prestige.club/images/sanfran-edit.jpg"  />
 		<meta property="og:site_name" ccontent=" Prestige WorldWide | San Francisco " />
 		<meta property="og:type" content="website"/>
 		
-		<link rel="icon" type="image/png" href="img/favicon.png" />
-		<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png" />
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="msapplication-TileColor" content="#ffffff" />
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -69,7 +69,7 @@
 		<meta name="twitter:title" content=" Prestige WorldWide | San Francisco " />
 		<meta name="twitter:url"    content="http://http://prestige.club/" />
 		<meta name="twitter:description" content=" Prestige SF is a self-organized network of people with a common agenda, cause, and interest in sharing ideas, information and resources. " />
-		<meta name="twitter:image" content="http://prestige.club/img/sanfran-edit.jpg"  />
+		<meta name="twitter:image" content="http://prestige.club/images/sanfran-edit.jpg"  />
 		
 		<!-- Theme JavaScript -->
 		<script src="js/jquery.js"></script>
@@ -78,31 +78,47 @@
 		<script src="js/uikit.scrollspy.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/nav.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
 <div class="navbar">
-	<img src="img/logo.png">
+	<img src="images/logo.png">
   </div>
 
-
+<div id="page-wrap">
 <body id="backtotop">
 <main>
 <div class="fullwidth colour4 clearfix" style="height: 850px;">
 	<div id="topcontainer" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 		
 		<h1> WE ARE PRESTIGE. </h1>
-
-				<img src="img/learn.png" onclick="scrollWin()" style="width: 250px; margin-top: 60px;">
-
-				<script>
-				function scrollWin(){
-					window.scrollTo(0, 1100)
-					behavior: "smooth"
-				}
-				</script>
-	
+			<a href="#learn"><img src="images/learn.png" style="width: 250px; margin-top: 60px;"></a>
 	</div>
+
+	<script>
+	// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+    
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+    
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+    
+    // top position relative to the document
+    var pos = $id.offset().top;
+    
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+});
+</script>
 </div>
 
 <div class="fullwidth colour1 clearfix" style="height: 400px;">
@@ -114,7 +130,7 @@
 	</div>
 </div>
 
-
+<div id="learn">
 <div class="fullwidth colour2 clearfix" style="height: 765px;">
 	<div id="maincont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 
@@ -131,23 +147,16 @@
 		Our club was designed to be a hub for the forward thinking individual that cant be put in a box. We strive to push the culture forward by never compromising on quality,
 		enhancing the comminity and making our own rules.
 		</strong> </p>
-
 	</div>
 </div>
-
-
+</div>
 <div class="fullwidth colour3 clearfix" style="height: 800px;">
 	
-	<<div id="quotecont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
-
-            <div class="item">
-
+	<div id="quotecont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
+	
 					<div class="iframe-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/w-r0QuRwB_g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" class="video" encrypted-media" allowfullscreen style="margin-left: -35px; margin-top: -60px"></iframe>
-					</div>
-
-				<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/w-r0QuRwB_g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: -35px;margin-top: -60px;"></iframe> -->
-             </div>
+							<iframe width="660" height="415" src="https://www.youtube.com/embed/w-r0QuRwB_g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" class="video" encrypted-media" allowfullscreen style="margin-left: -35px; margin-top: -60px"></iframe>
+					</div> 
     </div> 
 	
 </div>
@@ -176,10 +185,15 @@
 
 		<p class="backtotop"><a title="" href="#backtotop"><span class="fa fa-angle-double-up"></span></a></p>
 		<p>
-			<strong>CONTACT US</strong><br>
-			Email: info@prestigesf.club <br>
-			Phone: 415.926.8170
+			<strong>CONTACT US</strong> <br>
+			<strong> EMAIL: INFO@PRESTIGESF.CLUB </strong><br>
+			<strong> PHONE: 415.926.8170 </strong>
 		</p>
+		<br>
+		<p>
+			<strong>SOCIAL MEDIA</strong>
+		</p>
+		<div class="uavc-icons">
 		<div id="socialmedia" class="clearfix">
 			<ul>
 				<!--Fill int hrefs with prestige social media links-->
@@ -188,9 +202,15 @@
 				<li><a title="" href="https://www.instagram.com/prestige_SF/" rel="external"><span class="fa fa-instagram"></span></a></li>
 			</ul>
 		</div>
+		</div>
+
+		<div class="right-half">
+			  <strong> @PRESTIGE_SF </strong>
+		</div>
 
 	</div>
 </div>
-   </main>
+</main>
+</div>
 </body>
 </html>
