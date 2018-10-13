@@ -16,6 +16,8 @@
    Google Fonts
 ================================================== */
 
+@import url("/css/fonts/bebasneue/stylesheet.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic,900,900italic");
 
 /* ==================================================
@@ -41,7 +43,7 @@ html
 
 body
 {
-	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: 'bebas_neuebold', sans-serif;
 	font-size: 20px;
 	line-height: 32px;
 	font-weight: 300;
@@ -55,10 +57,12 @@ body
 /* COUNTDOWN STYLE */
 #daysleft {
 	text-align: center;
-  	font-size: 60px;
-  	margin-top: 0px;
-	  color: white;
-	  margin-bottom: 1em;
+	font-family: 'bebas_neuebold', sans-serif;
+	font-size: 75px;
+	margin-top: 77px;
+	color: white;
+	margin-bottom: 1em;
+	font-weight: 400;
 }
 
   /* Style the header */
@@ -127,11 +131,14 @@ a
 p
 {
 	margin: 0 0 20px 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px; 
+	text-align: left;
 }
 
 strong
 {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 em
@@ -146,12 +153,20 @@ h1, h2, h3
 	margin: 0 0 20px 0;
 	letter-spacing: -1px;
 	font-weight: 300;
+	font-family: 'bebas_neuebold', sans-serif;
 	text-transform: uppercase;
 }
 
+	h1 
+	{
+		font-size: 104px; 
+		margin: 30% 0 20px 0;
+	}
+
 	h2
 	{
-		font-size: 38px;
+		font-size: 40px;
+		font-weight: 400;
 		line-height: 38px;
 	}
 		
@@ -167,12 +182,12 @@ h1, h2, h3
 
 .colour1
 {
-	background: #cbac58;
+	background: #d1ab46;
 }
 
 .colour2
 {
-	background: grey;
+	background-image: url("/img/sanfran-trolley.jpg");
 }
 
 .colour3
@@ -180,6 +195,20 @@ h1, h2, h3
 	background: #EEE;
 }
 
+.colour4
+{
+	background-image: url("/img/sanfran-edit.jpg");
+}
+
+.colour5
+{
+	background-image: url("/img/sanfran-people.jpg");
+}
+
+.colour6
+{
+	background-image: url("/img/sanfran-footer.jpg");
+}
 
 /* ==================================================
    Separator Arrows
@@ -232,7 +261,7 @@ h1, h2, h3
 .fullwidth
 {
 	width: 100%;
-	height: 20%;
+	height: 600px;
 	padding: 60px 30px;
 	min-width: 280px;
 }
@@ -241,6 +270,16 @@ h1, h2, h3
 	{
 		margin: 0 auto;
 		width: 100%;
+		height: 800px; 
+		max-width: 1000px;
+		text-align: center;
+	}
+
+	.fullwidth .headcontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		height: 800px; 
 		max-width: 1000px;
 		text-align: center;
 	}
@@ -250,8 +289,8 @@ h1, h2, h3
 		padding: 6px 0 10px 0;
 		margin-bottom: 0;
 		letter-spacing: -1.5px;
-		color: #444;
-		font-weight: 400;
+		color: #fff;
+		font-weight: 800;
 	}
 	
 		#topcontainer h1 span
@@ -267,7 +306,6 @@ h1, h2, h3
 		margin-bottom: 0;
 		color: #999;
 	}
-
 
 	
 #countdown
@@ -312,6 +350,7 @@ h1, h2, h3
 #maincont
 {
 	color: #FFF;
+	margin-top: 5%;
 }
 
 	#maincont a
@@ -426,10 +465,33 @@ h1, h2, h3
 			background: #1ABC9C;
 		}
 
+		.iframe-container {
+			position: relative;
+			width: 100%;
+			padding-bottom: 56.25%; 
+			height: 0;
+		  }
+
+		 	.video{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		  }
+
+
 #footercont
 {
 	position: relative;
 	font-size: 18px;
+	height: 0px;
 }
 
 	#footercont #socialmedia ul
