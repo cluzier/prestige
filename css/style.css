@@ -491,6 +491,7 @@ h1, h2, h3
 {
 	position: relative;
 	font-size: 18px;
+	height: 0px;
 }
 
 	#footercont #socialmedia ul
