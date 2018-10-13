@@ -78,6 +78,8 @@
 		<script src="js/uikit.scrollspy.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/nav.js"></script>
+		<script src="js/scroll.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
 
@@ -85,24 +87,38 @@
 	<img src="img/logo.png">
   </div>
 
-
+<div id="page-wrap">
 <body id="backtotop">
 <main>
 <div class="fullwidth colour4 clearfix" style="height: 850px;">
 	<div id="topcontainer" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 		
 		<h1> WE ARE PRESTIGE. </h1>
-
-				<img src="img/learn.png" onclick="scrollWin()" style="width: 250px; margin-top: 60px;">
-
-				<script>
-				function scrollWin(){
-					window.scrollTo(0, 1100)
-					behavior: "smooth"
-				}
-				</script>
-	
+			<a href="#learn"><img src="img/learn.png" style="width: 250px; margin-top: 60px;"></a>
 	</div>
+
+	<script>
+	// handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+    // target element id
+    var id = $(this).attr('href');
+    
+    // target element
+    var $id = $(id);
+    if ($id.length === 0) {
+        return;
+    }
+    
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+    
+    // top position relative to the document
+    var pos = $id.offset().top;
+    
+    // animated top scrolling
+    $('body, html').animate({scrollTop: pos});
+});
+</script>
 </div>
 
 <div class="fullwidth colour1 clearfix" style="height: 400px;">
@@ -113,8 +129,7 @@
 
 	</div>
 </div>
-
-
+<div id="learn">
 <div class="fullwidth colour2 clearfix" style="height: 765px;">
 	<div id="maincont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
 
@@ -131,15 +146,13 @@
 		Our club was designed to be a hub for the forward thinking individual that cant be put in a box. We strive to push the culture forward by never compromising on quality,
 		enhancing the comminity and making our own rules.
 		</strong> </p>
-
 	</div>
 </div>
-
-
+</div>
 <div class="fullwidth colour3 clearfix" style="height: 800px;">
 	
-	<<div id="quotecont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
-
+	<div id="quotecont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
+<br>
             <div class="item">
 
 					<div class="iframe-container">
@@ -191,6 +204,7 @@
 
 	</div>
 </div>
-   </main>
+</main>
+</div>
 </body>
 </html>

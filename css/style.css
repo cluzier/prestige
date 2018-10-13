@@ -187,7 +187,7 @@ h1, h2, h3
 
 .colour2
 {
-	background-image: url("/img/sanfran-trolley.jpg");
+	background-image: url("../img/sanfran-trolley.jpg");
 }
 
 .colour3
@@ -197,17 +197,17 @@ h1, h2, h3
 
 .colour4
 {
-	background-image: url("/img/sanfran-edit.jpg");
+	background-image: url("../img/sanfran-edit.jpg");
 }
 
 .colour5
 {
-	background-image: url("/img/sanfran-people.jpg");
+	background-image: url("../img/sanfran-people.jpg");
 }
 
 .colour6
 {
-	background-image: url("/img/sanfran-footer.jpg");
+	background-image: url("../img/sanfran-footer.jpg");
 }
 
 /* ==================================================
