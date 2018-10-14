@@ -75,14 +75,35 @@ body
 		width: 100%; /* Full width */
 		z-index: 1;
 }
+
+.gold img {
+	height: 23%;
+	width: 35%;
+	margin-top: 101px;
+	margin-bottom: -242px;
+	margin-right: 30px;
+}
+
+.learn img {
+	width: 250px;
+	margin-top: 60px;
+}
+
+.comingsoon h2 {
+	font-size: 50px; 
+}
+
  main {
 	 margin-top: 120px;
  }
+
+
 /* logo */
 img {
 height: 85px;
 width: 75px;
 }
+
 /* Page content */
 .content {
   padding: 16px;
@@ -188,29 +209,31 @@ h1, h2, h3
 
 .colour2
 {
-	background-image: url("../images/sanfran-trolley.jpg");
+	background-image: url("/images/sanfran-trolley.jpg");
 }
 
 .colour3
 {
-	/* background: #EEE; */
-	backgrounsd-image: url("https://www.youtube.com/watch?v=w-r0QuRwB_g&feature=youtu.be")
+	background-image: url("/images/bus.jpg");
+	background-size: cover; 
 }
 
 .colour4
 {
-	background-image: url("../images/sanfran-edit.jpg");
+	background-image: url("/images/sanfran-edit.jpg");
+
 }
 
 .colour5
 {
-	background-image: url("../images/sanfran-people.jpg");
+	background-image: url("/images/sanfran-people.jpg");
 }
 
 .colour6
 {
-	background-image: url("../images/sanfran-footer.jpg");
+	background-image: url("/images/sanfran-footer.jpg");
 	background-size: 100%;
+	background-size: cover; 
 }
 
 /* ==================================================
@@ -264,7 +287,7 @@ h1, h2, h3
 .fullwidth
 {
 	width: 100%;
-	height: 600px;
+	height: 650px;
 	padding: 60px 30px;
 	min-width: 280px;
 }
@@ -451,7 +474,8 @@ h1, h2, h3
 				{
 					background: #cbac58;
 				}
-				
+	
+			
 
 #quotecont
 {
@@ -476,7 +500,7 @@ h1, h2, h3
 			height: 0;
 		  }
 
-		 	.video{
+			.video{
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -492,7 +516,7 @@ h1, h2, h3
 
 		  #footercont .right-half {
 			position: absolute;
-			right: -340px;
+			right: -214px;
 			height: 100%;
 			margin-top: -70px;
 			text-align: center;
@@ -570,14 +594,69 @@ h1, h2, h3
 /* ==================================================
    Responsive Media Queries - Tablets
 ================================================== */
-
-@media screen and (max-width: 768px)
+/* ----------- iPad Pro ----------- */
+/* Portrait */
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1.5) 
 {
 
 	body
 	{
 		font-size: 23px;
 		line-height: 29px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 616px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+		.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+	  }
+
+	.gold img {
+		height: 23%;
+		width: 38%;
+		margin-bottom: -75px;
+		margin-right: 11px;
+		}
+
+	.learn img {
+		width: 194px;
+		height: 62px;
+		margin-top: 39px;
+	}
+
+	#maincont {
+		color: #FFF;
+		margin-top: 9%;
+		padding-right: 30px;
+		padding-left: 35px;
+	}
+	
+	h2 {
+		font-size: 25px; 
+	}
+
+	p {
+		font-size: 13px; 
+	}
+
+	.story p {
+		margin-bottom: -30px; 
 	}
 	
 	#topcontainer h1
@@ -614,6 +693,25 @@ h1, h2, h3
 	{
 		padding: 15px 0;
 	}
+
+	#daysleft {
+		font-size: 40px;
+	}
+
+	.comingsoon h2 {
+		font-size: 50px; 
+	}
+
+	#footercont .right-half {
+		position: initial;
+		height: 100%;
+		margin-top: -45px;
+		margin-left: 53%;
+		text-align: center;
+		color: white;
+		font-size: xx-large;
+		font-family: 'bebas_neuebold', sans-serif;
+	}
 		
 	#footercont
 	{
@@ -639,11 +737,428 @@ h1, h2, h3
 	
 }
 
+/* Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) 
+  { 
+
+	body
+	{
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 570px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+	.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+		}
+
+	#topcontainer h1
+	{
+		font-size: 34px;
+		line-height: 36px;
+		margin-top: 270px; 	
+	}
+
+		#topcontainer h1 span
+		{
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		.gold img {
+			height: 23%;
+			width: 38%;
+			margin-right: 11px;
+			}
+	
+		.learn img {
+			width: 156px;
+			height: 57px;
+			margin-top: 39px;
+		}
+
+		#maincont {
+			color: #FFF;
+			margin-top: 6%;
+			padding-right: 30px;
+			padding-left: 35px;
+		}
+
+	h2 {
+			font-size: 30px; 
+		}
+
+	p {
+			font-size: 13px; 
+		}
+
+	.story p {
+			margin-bottom: -30px; 
+		}
+
+		#countdown #countdowncont ul#countscript li
+		{
+			padding: 6px 0;
+		}
+		
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 62px;
+				line-height: 62px;
+			}
+	
+			#countdown #countdowncont ul#countscript li p
+			{
+				font-size: 16px;
+				line-height: 16px;
+			}
+			
+		#maincont #signupform
+		{
+			margin: 0 auto 20px auto;
+			width: 100%;
+		}
+		
+		#quotecont
+		{
+			padding: 5px 0;
+		}
+	
+		#daysleft {
+			font-size: 35px;
+		}
+	
+		.comingsoon h2 {
+			font-size: 50px; 
+		}
+	
+		#footercont .right-half {
+			position: initial;
+			height: 100%;
+			margin-left: 69%;
+			margin-top: -60px;
+			text-align: center;
+			color: white;
+			font-size: xx-large;
+			font-family: 'bebas_neuebold', sans-serif;
+		}
+		
+		#footercont #socialmedia ul li
+		{
+			margin: 0 5px;
+		}
+		
+			#footercont #socialmedia ul li a
+			{
+				font-size: 28px;
+			}
+
+}
+
+
+/* iPad Portrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+
+	body
+	{
+		font-size: 23px;
+		line-height: 29px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 616px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+		.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+	  }
+
+	  .gold img {
+		height: 23%;
+		width: 38%;
+		margin-bottom: -212px;
+		margin-right: 11px;
+		}
+
+	.learn img {
+		width: 194px;
+		height: 62px;
+		margin-top: 39px;
+	}
+
+	#maincont {
+		color: #FFF;
+		margin-top: 10%;
+	}
+	
+	h2 {
+		font-size: 25px; 
+	}
+
+	p {
+		font-size: 13px; 
+	}
+
+	.story p {
+		margin-bottom: -30px; 
+	}
+
+	
+	#topcontainer h1
+	{
+		font-size: 54px;
+		line-height: 54px;
+		letter-spacing: -1.2px;
+	}
+
+		#topcontainer h1 span
+		{
+			font-size: 70px;
+			line-height: 70px;
+		}
+	
+	#countdown #countdowncont
+	{
+		max-width: 400px;
+	}
+	
+		#countdown #countdowncont ul#countscript li
+		{
+			width: 50%;
+			padding: 10px 0;
+		}
+		
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 70px;
+				line-height: 70px;
+			}
+			
+	#quotecont
+	{
+		padding: 15px 0;
+	}
+
+	#daysleft {
+		font-size: 40px;
+	}
+
+	.comingsoon h2 {
+		font-size: 50px; 
+	}
+
+	#footercont .right-half {
+		position: initial;
+		height: 100%;
+		margin-top: -45px;
+		margin-left: 65%;
+		text-align: center;
+		color: white;
+		font-size: xx-large;
+		font-family: 'bebas_neuebold', sans-serif;
+	}
+		
+	#footercont
+	{
+		font-size: 19px;
+	}
+		
+		#footercont #footerleft
+		{
+			float: none;
+			padding: 30px 0;
+			text-align: center;
+		}
+		
+			#footercont #socialmedia ul li a
+			{
+				font-size: 32px;
+			}
+		
+		#footercont #footerright
+		{
+			float: none;
+		}
+	
+}
+
+/* iPad Lanscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)
+{ 
+
+	body
+	{
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 570px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+	.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+		}
+
+	#topcontainer h1
+	{
+		font-size: 34px;
+		line-height: 36px;
+		margin-top: 270px; 	
+	}
+
+		#topcontainer h1 span
+		{
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		.gold img {
+			height: 23%;
+			width: 38%;
+			margin-right: 11px;
+			}
+	
+		.learn img {
+			width: 156px;
+			height: 57px;
+			margin-top: 39px;
+		}
+
+		#maincont {
+			color: #FFF;
+			margin-top: 9%;
+			padding-right: 30px;
+			padding-left: 35px;
+		}
+
+	h2 {
+			font-size: 30px; 
+		}
+
+	p {
+			font-size: 13px; 
+		}
+
+	.story p {
+			margin-bottom: -30px; 
+		}
+
+		#countdown #countdowncont ul#countscript li
+		{
+			padding: 6px 0;
+		}
+		
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 62px;
+				line-height: 62px;
+			}
+	
+			#countdown #countdowncont ul#countscript li p
+			{
+				font-size: 16px;
+				line-height: 16px;
+			}
+			
+		#maincont #signupform
+		{
+			margin: 0 auto 20px auto;
+			width: 100%;
+		}
+		
+		#quotecont
+		{
+			padding: 5px 0;
+		}
+	
+		#daysleft {
+			font-size: 35px;
+		}
+	
+		.comingsoon h2 {
+			font-size: 50px; 
+		}
+	
+		#footercont .right-half {
+			position: initial;
+			height: 100%;
+			margin-left: 53%;
+			margin-top: -51px;
+			text-align: center;
+			color: white;
+			font-size: larger;
+			font-family: 'bebas_neuebold', sans-serif;
+		}
+		
+		#footercont #socialmedia ul li
+		{
+			margin: 0 5px;
+		}
+		
+			#footercont #socialmedia ul li a
+			{
+				font-size: 28px;
+			}
+
+}
+
+
 /* ==================================================
    Responsive Media Queries - Mobiles
 ================================================== */
 
-@media screen and (max-width: 480px)
+/* iPhone 6,7 & 8 Plus Portrait*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) 
 {	
 
 	body
@@ -651,7 +1166,56 @@ h1, h2, h3
 		font-size: 21px;
 		line-height: 27px;
 	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 616px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+		.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+		}
+
+	.gold img {
+		height: 23%;
+		width: 38%;
+		margin-bottom: -75px;
+		margin-right: 11px;
+		}
+
+	.learn img {
+		width: 194px;
+		height: 62px;
+		margin-top: 39px;
+	}
+
+	#maincont {
+		color: #FFF;
+		margin-top: 0%;
+	}
 	
+	h2 {
+		font-size: 25px; 
+	}
+
+	p {
+		font-size: 13px; 
+	}
+
+	.story p {
+		margin-bottom: -30px; 
+	}
+
+
 	#topcontainer h1
 	{
 		font-size: 36px;
@@ -692,6 +1256,25 @@ h1, h2, h3
 	{
 		padding: 5px 0;
 	}
+
+	#daysleft {
+		font-size: 40px;
+	}
+
+	.comingsoon h2 {
+		font-size: 50px; 
+	}
+
+	#footercont .right-half {
+		position: initial;
+		height: 100%;
+		margin-top: 1px;
+		text-align: center;
+		color: white;
+		font-size: smaller;
+		font-family: 'bebas_neuebold', sans-serif;
+		}
+
 	
 	#footercont #socialmedia ul li
 	{
@@ -703,5 +1286,395 @@ h1, h2, h3
 			font-size: 28px;
 		}
 	
+}
+
+
+/* iPhone 6,7 & 8 Plus Landscape*/
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) 
+{ 
+
+	body
+	{
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 570px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+	.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+		}
+
+	#topcontainer h1
+	{
+		font-size: 34px;
+		line-height: 36px;
+		margin-top: 270px; 	
+	}
+
+		#topcontainer h1 span
+		{
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		.gold img {
+			height: 23%;
+			width: 38%;
+			margin-right: 11px;
+			}
+	
+		.learn img {
+			width: 156px;
+			height: 57px;
+			margin-top: 39px;
+		}
+
+	h2 {
+			font-size: 30px; 
+		}
+
+	p {
+			font-size: 13px; 
+		}
+
+	.story p {
+			margin-bottom: -30px; 
+		}
+
+		#countdown #countdowncont ul#countscript li
+		{
+			padding: 6px 0;
+		}
+		
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 62px;
+				line-height: 62px;
+			}
+	
+			#countdown #countdowncont ul#countscript li p
+			{
+				font-size: 16px;
+				line-height: 16px;
+			}
+			
+		#maincont #signupform
+		{
+			margin: 0 auto 20px auto;
+			width: 100%;
+		}
+		
+		#quotecont
+		{
+			padding: 5px 0;
+		}
+	
+		#daysleft {
+			font-size: 35px;
+		}
+	
+		.comingsoon h2 {
+			font-size: 50px; 
+		}
+	
+		#footercont .right-half {
+			position: initial;
+			height: 100%;
+			margin-left: 57%;
+			margin-top: -51px;
+			text-align: center;
+			color: white;
+			font-size: larger;
+			font-family: 'bebas_neuebold', sans-serif;
+		}
+		
+		#footercont #socialmedia ul li
+		{
+			margin: 0 5px;
+		}
+		
+			#footercont #socialmedia ul li a
+			{
+				font-size: 28px;
+			}
+
+}
+
+/* iPhone X Portrait*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+
+	body
+	{
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 710px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+		.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+		}
+
+	.gold img {
+		height: 23%;
+		width: 38%;
+		margin-bottom: -75px;
+		margin-right: 11px;
+		}
+
+	.learn img {
+		width: 156px;
+		height: 57px;
+		margin-top: 39px;
+	}
+	
+	h2 {
+		font-size: 23px; 
+	}
+
+	p {
+		font-size: 13px; 
+	}
+
+	#maincont {
+		color: #FFF;
+		margin-top: 9%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.story p {
+		margin-bottom: -30px; 
+	}
+
+	#topcontainer h1
+	{
+		font-size: 34px;
+		line-height: 36px;
+		margin-top: 100px; 	
+	}
+
+		#topcontainer h1 span
+		{
+			font-size: 50px;
+			line-height: 50px;
+		}
+	
+	#countdown #countdowncont ul#countscript li
+	{
+		padding: 6px 0;
+	}
+	
+		#countdown #countdowncont ul#countscript li span
+		{
+			font-size: 62px;
+			line-height: 62px;
+		}
+
+		#countdown #countdowncont ul#countscript li p
+		{
+			font-size: 16px;
+			line-height: 16px;
+		}
+		
+	#maincont #signupform
+	{
+		margin: 0 auto 20px auto;
+		width: 100%;
+	}
+	
+	#quotecont
+	{
+		padding: 5px 0;
+	}
+
+	#daysleft {
+		font-size: 35px;
+	}
+
+	.comingsoon h2 {
+		font-size: 50px; 
+	}
+
+	#footercont .right-half {
+		position: initial;
+		height: 100%;
+		margin-left: 111px;
+		margin-top: -1px;
+		text-align: center;
+		color: white;
+		font-size: larger;
+		font-family: 'bebas_neuebold', sans-serif;
+	}
+	
+	#footercont #socialmedia ul li
+	{
+		margin: 0 5px;
+	}
+	
+		#footercont #socialmedia ul li a
+		{
+			font-size: 28px;
+		}
+	
+}
+
+/* iPhone X Landscape*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { 
+
+	body
+	{
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+	.fullwidth
+	{
+		width: 100%;
+		height: 570px;
+		padding: 60px 30px;
+		min-width: 280px;
+		overflow-x: hidden;
+	}
+
+	.fullwidth .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			height: 200px; 
+			max-width: 1000px;
+			text-align: center;
+		}
+
+	#topcontainer h1
+	{
+		font-size: 34px;
+		line-height: 36px;
+		margin-top: 270px; 	
+	}
+
+		#topcontainer h1 span
+		{
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		.gold img {
+			height: 23%;
+			width: 38%;
+			margin-right: 11px;
+			}
+	
+		.learn img {
+			width: 156px;
+			height: 57px;
+			margin-top: 39px;
+		}
+
+	h2 {
+			font-size: 30px; 
+		}
+
+	p {
+			font-size: 13px; 
+		}
+
+	.story p {
+			margin-bottom: -30px; 
+		}
+
+		#countdown #countdowncont ul#countscript li
+		{
+			padding: 6px 0;
+		}
+		
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 62px;
+				line-height: 62px;
+			}
+	
+			#countdown #countdowncont ul#countscript li p
+			{
+				font-size: 16px;
+				line-height: 16px;
+			}
+			
+		#maincont #signupform
+		{
+			margin: 0 auto 20px auto;
+			width: 100%;
+		}
+		
+		#quotecont
+		{
+			padding: 5px 0;
+		}
+	
+		#daysleft {
+			font-size: 35px;
+		}
+	
+		.comingsoon h2 {
+			font-size: 50px; 
+		}
+	
+		#footercont .right-half {
+			position: initial;
+			height: 100%;
+			margin-left: 65%;
+			margin-top: -89px;
+			text-align: center;
+			color: white;
+			font-size: larger;
+			font-family: 'bebas_neuebold', sans-serif;
+		}
+		
+		#footercont #socialmedia ul li
+		{
+			margin: 0 5px;
+		}
+		
+			#footercont #socialmedia ul li a
+			{
+				font-size: 28px;
+			}
+
 }
 
